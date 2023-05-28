@@ -1,0 +1,83 @@
+##Write code for following in Salesforce.com in apex programmming language##
+1.Sorting n numbers
+
+code:-
+public class sorting_n{
+    public static void main1(){
+        List<Object> myList = new List<Object>{ 4, 2, 8, 3, 1, 5 };
+        myList.sort();
+        System.debug(myList);
+    }
+}
+
+##for debuging type in anonymous window
+sorting_n.main1()
+
+
+2.Creation of Fibnocci series
+
+code:-
+public class Fibonacciseries {
+    public string generateFibonacciseries(Integer n){
+        String fibonacciseries='fibonacci series :';
+        Integer f1=0, f2=1, nextnum=0;
+        for(Integer i=0; i<=n; i++){
+            nextnum=f1+f2;
+            f1=f2;
+            f2=nextnum;          
+            fibonacciseries +=String.ValueOf(nextnum)+',';            
+        }
+        return fibonacciseries;
+    }
+}
+
+##For Debuging type in anonymous window
+Fibonacciseries f=new Fibonacciseries();
+system.debug(f.generatefibonacciseries(8));
+
+
+3.Identification of Odd/even number
+
+code:-
+public class even_odd {
+    public static void main2(){
+        integer num=4;
+        if(math.mod(num,2)==0){
+           System.debug('Number is even....');
+           }
+		else{
+            System.debug('Number is odd....');
+               
+           }
+    }
+
+}
+
+##For Debuging type in anonymous window
+even_odd.main2()
+
+4.Identification of positive/negative number
+
+code:-
+public class positive_negative {
+    public static void main2(){
+        integer num= -5;
+        if(num>0){
+           System.debug('Number is positive....');
+           }
+		else if(num<0){
+            System.debug('Number is negative....');
+               
+           }
+        else{
+            System.debug('Number is equals to zero');
+        }
+    }
+
+}	
+
+##for debuging type in anonymous window
+positive_negative.main2()
+    
+
+ 
